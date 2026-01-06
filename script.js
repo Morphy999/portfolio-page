@@ -3,14 +3,14 @@
         en: {
             greeting: "Hello, I'm",
             role: "Data Scientist",
-            summary: "Computer Science graduate, currently pursuing a Master's at UFV focused on Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), and Computer Vision. Passionate about AI and high-impact projects.",
+            summary: "Data Scientist with 2 years of experience in AI and Machine Learning. Currently pursuing a Master's at UFV, I bridge research and engineering by building autonomous agents, RAG pipelines, and scalable AI solutions with FastAPI.",
             download: "Download CV",
             contact: "Contact"
         },
         pt: {
             greeting: "Olá, eu sou",
             role: "Cientista de Dados",
-            summary: "Graduado em Ciência da Computação, cursando Mestrado na UFV com foco em Modelos de Linguagem de Grande Escala (LLMs), Geração Aumentada por Recuperação (RAG) e Visão Computacional. Apaixonado por IA e projetos de impacto.",
+            summary: "Cientista de Dados com 2 anos de experiência em IA e Machine Learning. Mestrando na UFV, conecto pesquisa e engenharia criando agentes autônomos, pipelines de RAG e soluções escaláveis de IA com FastAPI.",
             download: "Baixar CV",
             contact: "Contato"
         }
@@ -94,22 +94,31 @@
         }
     };
 
-    const skillsTexts = {
-    en: { 
+
+const skillsTexts = {
+    en: {
+        levels: { advanced: "Advanced", intermediate: "Intermediate", basic: "Basic" },
         cards: [
-            ["Python", "Go", "C/C++", "SQL (PostgreSQL)"], // Languages [cite: 41, 40]
-            ["LLMs (RAG)", "Computer Vision", "Deep Learning", "NLP"], // AI/ML [cite: 13, 42]
-            ["AWS (Step Functions/Lambda)", "Docker", "PyTorch", "LangChain"] // Tools [cite: 24, 39, 42]
-        ] 
+            // Card 1: Languages & Databases
+            ["Python", "Go", "C/C++", "SQL (Postgres/MySQL)", "NoSQL (MongoDB)"],
+            // Card 2: AI/ML Core
+            ["LLMs & Fine-tuning", "RAG Pipelines", "Autonomous Agents", "Computer Vision", "Time-series"],
+            // Card 3: Frameworks & Tools
+            ["PyTorch", "LangChain", "LlamaIndex", "FastAPI", "AWS", "Docker"]
+        ],
     },
-    pt: { 
+    pt: {
+        levels: { advanced: "Avançado", intermediate: "Intermediário", basic: "Básico" },
         cards: [
-            ["Python", "Go", "C/C++", "SQL (PostgreSQL)"], // Linguagens [cite: 41, 40]
-            ["LLMs (RAG)", "Visão Computacional", "Deep Learning", "NLP"], // IA/ML [cite: 13, 42]
-            ["AWS (Step Functions/Lambda)", "Docker", "PyTorch", "LangChain"] // Ferramentas [cite: 24, 39, 42]
-        ] 
-    }
-    };
+            // Card 1: Linguagens e Bancos
+            ["Python", "Go", "C/C++", "SQL (Postgres/MySQL)", "NoSQL (MongoDB)"],
+            // Card 2: IA/ML Core
+            ["LLMs & Fine-tuning", "Pipelines de RAG", "Agentes Autônomos", "Visão Computacional", "Séries Temporais"],
+            // Card 3: Frameworks e Ferramentas
+            ["PyTorch", "LangChain", "LlamaIndex", "FastAPI", "AWS", "Docker"]
+        ],
+    },
+};
 
     const projectsTexts = {
         en: { title: "Projects", items: [{ title: "Multimodal RAG Agents", tags: ["LLM", "LangChain"], desc: "Intelligent agents integrating text and images for automation.", actions: ["Code"] }, { title: "Satellite Segmentation", tags: ["PyTorch", "GEE"], desc: "Deep Learning models for agricultural monitoring.", actions: ["Code"] }] },
