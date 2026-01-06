@@ -95,20 +95,20 @@
     };
 
     const skillsTexts = {
-        en: { 
-            cards: [
-                ["Python", "Go", "C/C++", "SQL (PostgreSQL)"], // Languages [cite: 41, 40]
-                ["LLMs (RAG)", "Computer Vision", "Deep Learning", "NLP"], // AI/ML [cite: 13, 42]
-                ["AWS (Step Functions/Lambda)", "Docker", "PyTorch", "LangChain"] // Tools [cite: 24, 39, 42]
-            ] 
-        },
-        pt: { 
-            cards: [
-                ["Python", "Go", "C/C++", "SQL (PostgreSQL)"], // Linguagens [cite: 41, 40]
-                ["LLMs (RAG)", "Visão Computacional", "Deep Learning", "NLP"], // IA/ML [cite: 13, 42]
-                ["AWS (Step Functions/Lambda)", "Docker", "PyTorch", "LangChain"] // Ferramentas [cite: 24, 39, 42]
-            ] 
-        }
+    en: { 
+        cards: [
+            ["Python", "Go", "C/C++", "SQL (PostgreSQL)"], // Languages [cite: 41, 40]
+            ["LLMs (RAG)", "Computer Vision", "Deep Learning", "NLP"], // AI/ML [cite: 13, 42]
+            ["AWS (Step Functions/Lambda)", "Docker", "PyTorch", "LangChain"] // Tools [cite: 24, 39, 42]
+        ] 
+    },
+    pt: { 
+        cards: [
+            ["Python", "Go", "C/C++", "SQL (PostgreSQL)"], // Linguagens [cite: 41, 40]
+            ["LLMs (RAG)", "Visão Computacional", "Deep Learning", "NLP"], // IA/ML [cite: 13, 42]
+            ["AWS (Step Functions/Lambda)", "Docker", "PyTorch", "LangChain"] // Ferramentas [cite: 24, 39, 42]
+        ] 
+    }
     };
 
     const projectsTexts = {
