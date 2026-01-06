@@ -11,10 +11,10 @@
     <nav id="nav-bar">
         <div class="logo">Walter Bueno</div>
         <ul class="nav-links">
-            <li><a href="#About" data-i18n="nav-about">Sobre</a></li>
-            <li><a href="#experience" data-i18n="nav-exp">Experiência</a></li>
-            <li><a href="#projects" data-i18n="nav-projects">Projetos</a></li>
-            <li><a href="#skills" data-i18n="nav-skills">Habilidades</a></li>
+            <li><a href="#About" data-en="About" data-pt="Sobre">Sobre</a></li>
+            <li><a href="#experience" data-en="Experience" data-pt="Experiência">Experiência</a></li>
+            <li><a href="#projects" data-en="Projects" data-pt="Projetos">Projetos</a></li>
+            <li><a href="#Skills" data-en="Skills" data-pt="Habilidades">Habilidades</a></li>
         </ul>
         <div class="lang-controls">
             <div class="lang-switch" id="langSwitch" data-lang="pt">
@@ -31,11 +31,11 @@
                 <img src="perfil.jpg" alt="Walter Bueno">
             </div>
             <div class="section__text">
-                <p class="section__text__p1" data-i18n="hello">Olá, eu sou</p>
+                <p class="section__text__p1">Olá, eu sou</p>
                 <h1 class="title">Walter Bueno</h1>
-                <p class="section__text__p2" data-i18n="role">Cientista de Dados</p>
-                <div class="summary" data-i18n="summary">
-                    Graduado em Ciência da Computação, atualmente cursando Mestrado com foco em LLMs, RAG e Visão Computacional. Apaixonado por IA e Ciência de Dados.
+                <p class="section__text__p2">Cientista de Dados</p>
+                <div class="summary">
+                    Graduado em Ciência da Computação, atualmente cursando Mestrado com foco em LLMs, RAG e Visão Computacional.
                 </div>
                 <div id="socials-container">
                     <a href="https://github.com/Morphy999" target="_blank">GitHub</a>
@@ -48,97 +48,90 @@
         <div class="section-divider"></div>
 
         <div class="education">
-            <h2 class="section-title" data-i18n="edu-title">Educação</h2>
+            <h2 class="section-title">Educação</h2>
             <div class="edu-item">
-                <h3>UFV - Mestrado</h3>
-                <p data-i18n="edu-msc">Mestrado em Ciência da Computação (Deep Learning, NLP, RAG)</p>
+                <h4>Universidade Federal de Viçosa (UFV)</h4>
+                <p class="edu-meta">Mestrado · 2025 – Presente</p>
+                <p class="edu-desc">Aprendizado Profundo, NLP e RAG.</p>
             </div>
             <div class="edu-item">
-                <h3>UFV - Bacharelado</h3>
-                <p data-i18n="edu-bsc">Bacharelado em Ciência da Computação</p>
+                <h4>Universidade Federal de Viçosa (UFV)</h4>
+                <p class="edu-meta">Bacharelado · 2021 – 2025</p>
+                <p class="edu-desc">Ciência da Computação.</p>
             </div>
         </div>
     </section>
 
     <section id="experience" class="section">
-        <h2 class="section-title" data-i18n="exp-title">Experiência Profissional</h2>
+        <h2 class="section-title">Experiência Profissional</h2>
         <div class="timeline">
             <div class="timeline-row">
-                <div class="time-badge">2025 - Presente</div>
+                <div class="time-badge"></div>
                 <div class="xp-card">
                     <div class="xp-head">
                         <h3>Tarken Software</h3>
-                        <p class="xp-meta" data-i18n="exp-jr">Cientista de Dados Junior</p>
+                        <p class="xp-role"></p>
+                        <p class="xp-meta"></p>
                     </div>
-                    <ul class="xp-points">
-                        <li data-i18n="exp1-p1">Desenvolvimento de features temporais com Google Earth Engine.</li>
-                        <li data-i18n="exp1-p2">Otimização de modelos de Deep Learning para segmentação de satélite.</li>
-                        <li data-i18n="exp1-p3">Implementação de pipelines AWS (Lambda, Step Functions).</li>
-                    </ul>
+                    <ul class="xp-points"></ul>
                 </div>
             </div>
             <div class="timeline-row">
-                <div class="time-badge">2024 - 2025</div>
+                <div class="time-badge"></div>
                 <div class="xp-card">
                     <div class="xp-head">
                         <h3>Tarken Software</h3>
-                        <p class="xp-meta" data-i18n="exp-intern">Estágio em Ciência de Dados</p>
+                        <p class="xp-role"></p>
+                        <p class="xp-meta"></p>
                     </div>
-                    <ul class="xp-points">
-                        <li data-i18n="exp2-p1">Treinamento de modelos de segmentação semântica e séries temporais.</li>
-                        <li data-i18n="exp2-p2">Desenvolvimento de pipelines de RAG para LLMs.</li>
-                    </ul>
+                    <ul class="xp-points"></ul>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="projects">
-        <h2 class="section-title" data-i18n="proj-title">Projetos em Destaque</h2>
+        <h2 class="section-title">Projetos</h2>
         <div class="projects-wrapper">
-            <button class="scroll-btn left" id="prevBtn">&#10094;</button>
-            <div class="projects-carousel" id="projectCarousel">
+            <button class="scroll-btn left">❮</button>
+            <div class="projects-carousel">
                 <div class="project-card">
-                    <div class="project-thumb"><img src="thumb1.jpg" alt="Projeto"></div>
-                    <h3 class="project-title">Multimodal RAG Agents</h3>
-                    <ul class="tags">
-                        <li>LLM</li>
-                        <li>LangChain</li>
-                        <li>Python</li>
-                    </ul>
-                    <p class="project-desc" data-i18n="proj1-desc">Agentes inteligentes integrando texto e imagens em fluxos de automação.</p>
+                    <div class="project-thumb"><img src="thumb1.jpg" alt="RAG"></div>
+                    <h3 class="project-title"></h3>
+                    <ul class="tags"></ul>
+                    <p class="project-desc"></p>
+                    <div class="card-actions">
+                        <a href="#" class="btn-link"><span>Code</span></a>
+                    </div>
                 </div>
+                <div class="project-card">
+                    <div class="project-thumb"><img src="thumb2.jpg" alt="CV"></div>
+                    <h3 class="project-title"></h3>
+                    <ul class="tags"></ul>
+                    <p class="project-desc"></p>
+                    <div class="card-actions">
+                        <a href="#" class="btn-link"><span>Code</span></a>
+                    </div>
                 </div>
-            <button class="scroll-btn right" id="nextBtn">&#10095;</button>
+            </div>
+            <button class="scroll-btn right">❯</button>
         </div>
     </section>
 
-    <section id="skills" class="section">
-        <h2 class="section-title" data-i18n="skills-title">Habilidades Técnicas</h2>
+    <section id="Skills" class="section">
+        <h2 class="section-title" data-en="Skills" data-pt="Habilidades">Habilidades</h2>
         <div class="skills-grid">
             <div class="skill-card">
-                <h3 class="skill-card__title">ML & Deep Learning</h3>
-                <div class="skill-card__tags">
-                    <span class="tag">PyTorch <span class="level" data-key="advanced">ADV</span></span>
-                    <span class="tag">TensorFlow</span>
-                    <span class="tag">Scikit-learn</span>
-                </div>
+                <h3 class="skill-card__title" data-en="Languages" data-pt="Linguagens">Linguagens</h3>
+                <div class="skill-card__tags"></div>
             </div>
             <div class="skill-card">
-                <h3 class="skill-card__title">LLM & RAG</h3>
-                <div class="skill-card__tags">
-                    <span class="tag">LangChain</span>
-                    <span class="tag">LlamaIndex</span>
-                    <span class="tag">Vector DBs</span>
-                </div>
+                <h3 class="skill-card__title" data-en="AI & ML" data-pt="IA & ML">IA & ML</h3>
+                <div class="skill-card__tags"></div>
             </div>
             <div class="skill-card">
-                <h3 class="skill-card__title">Cloud & Languages</h3>
-                <div class="skill-card__tags">
-                    <span class="tag">AWS</span>
-                    <span class="tag">Python</span>
-                    <span class="tag">Go</span>
-                </div>
+                <h3 class="skill-card__title" data-en="Tools" data-pt="Ferramentas">Ferramentas</h3>
+                <div class="skill-card__tags"></div>
             </div>
         </div>
     </section>
