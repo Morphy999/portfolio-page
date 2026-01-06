@@ -3,14 +3,14 @@
         en: {
             greeting: "Hello, I'm",
             role: "Data Scientist",
-            summary: "Data Scientist with 2 years of experience in AI and Machine Learning. Currently pursuing a Master's at UFV, I bridge research and engineering by building autonomous agents, RAG pipelines, and scalable AI solutions with FastAPI.",
+            summary: "Data Scientist with 2 years of hands-on experience in AI and Machine Learning. Currently pursuing a Master's at UFV, I bridge research and engineering by building autonomous agents, RAG pipelines, and scalable AI solutions with FastAPI.",
             download: "Download CV",
             contact: "Contact"
         },
         pt: {
             greeting: "Olá, eu sou",
             role: "Cientista de Dados",
-            summary: "Cientista de Dados com 2 anos de experiência em IA e Machine Learning. Mestrando na UFV, conecto pesquisa e engenharia criando agentes autônomos, pipelines de RAG e soluções escaláveis de IA com FastAPI.",
+            summary: "Cientista de Dados com 2 anos de experiência prática em IA e Machine Learning. Mestrando na UFV, conecto pesquisa e engenharia criando agentes autônomos, pipelines de RAG e soluções escaláveis de IA com FastAPI.",
             download: "Baixar CV",
             contact: "Contato"
         }
@@ -94,35 +94,38 @@
         }
     };
 
-
-const skillsTexts = {
-    en: {
-        levels: { advanced: "Advanced", intermediate: "Intermediate", basic: "Basic" },
-        cards: [
-            // Card 1: Languages & Databases
-            ["Python", "Go", "C/C++", "SQL (Postgres/MySQL)", "NoSQL (MongoDB)"],
-            // Card 2: AI/ML Core
-            ["LLMs & Fine-tuning", "RAG Pipelines", "Autonomous Agents", "Computer Vision", "Time-series"],
-            // Card 3: Frameworks & Tools
-            ["PyTorch", "LangChain", "LlamaIndex", "FastAPI", "AWS", "Docker"]
-        ],
-    },
-    pt: {
-        levels: { advanced: "Avançado", intermediate: "Intermediário", basic: "Básico" },
-        cards: [
-            // Card 1: Linguagens e Bancos
-            ["Python", "Go", "C/C++", "SQL (Postgres/MySQL)", "NoSQL (MongoDB)"],
-            // Card 2: IA/ML Core
-            ["LLMs & Fine-tuning", "Pipelines de RAG", "Agentes Autônomos", "Visão Computacional", "Séries Temporais"],
-            // Card 3: Frameworks e Ferramentas
-            ["PyTorch", "LangChain", "LlamaIndex", "FastAPI", "AWS", "Docker"]
-        ],
-    },
-};
+    const skillsTexts = {
+        en: {
+            cards: [
+                ["Python", "Go", "C/C++", "SQL (Postgres/MySQL)", "NoSQL (MongoDB)"],
+                ["LLMs & Fine-tuning", "RAG Pipelines", "Autonomous Agents", "Computer Vision", "Time-series Forecasting"],
+                ["PyTorch", "LangChain", "LlamaIndex", "FastAPI", "AWS", "Docker"]
+            ]
+        },
+        pt: {
+            cards: [
+                ["Python", "Go", "C/C++", "SQL (Postgres/MySQL)", "NoSQL (MongoDB)"],
+                ["LLMs & Fine-tuning", "Pipelines de RAG", "Agentes Autônomos", "Visão Computacional", "Previsão de Séries Temporais"],
+                ["PyTorch", "LangChain", "LlamaIndex", "FastAPI", "AWS", "Docker"]
+            ]
+        }
+    };
 
     const projectsTexts = {
-        en: { title: "Projects", items: [{ title: "Multimodal RAG Agents", tags: ["LLM", "LangChain"], desc: "Intelligent agents integrating text and images for automation.", actions: ["Code"] }, { title: "Satellite Segmentation", tags: ["PyTorch", "GEE"], desc: "Deep Learning models for agricultural monitoring.", actions: ["Code"] }] },
-        pt: { title: "Projetos", items: [{ title: "Agentes RAG Multimodais", tags: ["LLM", "LangChain"], desc: "Agentes inteligentes integrando texto e imagens para automação.", actions: ["Código"] }, { title: "Segmentação de Satélite", tags: ["PyTorch", "GEE"], desc: "Modelos de Deep Learning para monitoramento agrícola.", actions: ["Código"] }] }
+        en: { 
+            title: "Projects", 
+            items: [
+                { title: "Multimodal RAG Agents", tags: ["LLM", "LangChain", "FastAPI"], desc: "Intelligent agents integrating text and images for automation.", actions: "Code" }, 
+                { title: "Satellite Segmentation", tags: ["PyTorch", "GEE", "AWS"], desc: "Deep Learning models for agricultural monitoring.", actions: "Code" }
+            ] 
+        },
+        pt: { 
+            title: "Projetos", 
+            items: [
+                { title: "Agentes RAG Multimodais", tags: ["LLM", "LangChain", "FastAPI"], desc: "Agentes inteligentes integrando texto e imagens para automação.", actions: "Código" }, 
+                { title: "Segmentação de Satélite", tags: ["PyTorch", "GEE", "AWS"], desc: "Modelos de Deep Learning para monitoramento agrícola.", actions: "Código" }
+            ] 
+        }
     };
 
     const switchBtn = document.getElementById("langSwitch");
@@ -130,25 +133,21 @@ const skillsTexts = {
     function applyLang(lang) {
         document.documentElement.lang = lang === "pt" ? "pt-BR" : "en";
         
-        // Nav
+        // Nav Links
         document.querySelectorAll(".nav-links a").forEach(a => {
             const text = a.getAttribute(`data-${lang}`);
             if(text) a.textContent = text;
         });
 
-        // Profile
+        // Profile Section
         const p = profileTexts[lang];
-        const greetingEl = document.querySelector(".section__text__p1");
-        const roleEl = document.querySelector(".section__text__p2");
-        const summaryEl = document.querySelector(".summary");
-        if(greetingEl) greetingEl.textContent = p.greeting;
-        if(roleEl) roleEl.textContent = p.role;
-        if(summaryEl) summaryEl.textContent = p.summary;
+        document.querySelector(".section__text__p1").textContent = p.greeting;
+        document.querySelector(".section__text__p2").textContent = p.role;
+        document.querySelector(".summary").textContent = p.summary;
 
-        // Experience
+        // Experience Section
         const exp = experienceTexts[lang];
-        const expTitle = document.querySelector("#experience .section-title");
-        if(expTitle) expTitle.textContent = exp.title;
+        document.querySelector("#experience .section-title").textContent = exp.title;
         document.querySelectorAll(".timeline-row").forEach((row, i) => {
             const item = exp.items[i];
             if(!item) return;
@@ -157,23 +156,32 @@ const skillsTexts = {
             row.querySelector(".xp-meta").textContent = item.meta;
             const ul = row.querySelector(".xp-points");
             ul.innerHTML = "";
-            item.points.forEach(pt => { const li = document.createElement("li"); li.textContent = pt; ul.appendChild(li); });
+            item.points.forEach(pt => { 
+                const li = document.createElement("li"); 
+                li.textContent = pt; 
+                ul.appendChild(li); 
+            });
         });
 
-        // Education
+        // Education Section
         const edu = educationTexts[lang];
+        document.querySelector(".education .section-title").textContent = edu.title;
         document.querySelectorAll(".edu-item").forEach((item, i) => {
             const data = edu.items[i];
             if(!data) return;
-            const meta = item.querySelector(".edu-meta");
-            const desc = item.querySelector(".edu-desc");
-            if(meta) meta.textContent = data.meta;
-            if(desc) desc.textContent = data.desc;
+            item.querySelector(".edu-meta").textContent = data.meta;
+            item.querySelector(".edu-desc").textContent = data.desc;
         });
 
-        // Skills
+        // Skills Section
         const sk = skillsTexts[lang];
+        const skillTitles = document.querySelectorAll(".skill-card__title");
         document.querySelectorAll(".skill-card").forEach((card, i) => {
+            // Update Title
+            const titleEl = card.querySelector(".skill-card__title");
+            if(titleEl) titleEl.textContent = titleEl.getAttribute(`data-${lang}`);
+
+            // Update Tags
             const container = card.querySelector(".skill-card__tags");
             if(!container || !sk.cards[i]) return;
             container.innerHTML = "";
@@ -185,15 +193,16 @@ const skillsTexts = {
             });
         });
 
-        // Projects
+        // Projects Section
         const pr = projectsTexts[lang];
-        const prTitle = document.querySelector("#projects .section-title");
-        if(prTitle) prTitle.textContent = pr.title;
+        document.querySelector("#projects .section-title").textContent = pr.title;
         document.querySelectorAll(".project-card").forEach((card, i) => {
             const item = pr.items[i];
             if(!item) return;
             card.querySelector(".project-title").textContent = item.title;
             card.querySelector(".project-desc").textContent = item.desc;
+            card.querySelector(".btn-link span").textContent = item.actions;
+            
             const tagContainer = card.querySelector(".tags");
             tagContainer.innerHTML = "";
             item.tags.forEach(t => {
@@ -210,11 +219,11 @@ const skillsTexts = {
         applyLang(next);
     });
 
-    // Inicia em PT
+    // Inicia em Português
     applyLang("pt");
 })();
 
-// Lógica de Carrossel
+// Carrossel de Projetos
 (function() {
     const carousel = document.querySelector(".projects-carousel");
     const btnL = document.querySelector(".scroll-btn.left");
