@@ -1,59 +1,122 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Walter Bueno | AI & Data Science</title>
+<title>Walter Bueno Neto</title>
 
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+<div class="logo">Walter Bueno</div>
+<li><a href="#About" data-en="About" data-pt="Sobre">About</a></li>
+<li><a href="#projects" data-en="Projects" data-pt="Projetos">Projects</a></li>
+<li><a href="#Skills" data-en="Skills" data-pt="Habilidades">Skills</a></li>
+<li>
+  <a
+    href="./assets/Curriculo_Walter.pdf"
+    download="Curriculo_Walter.pdf"
+    data-en="Resume"
+    data-pt="Currículo"
+  >
+    Resume
+  </a>
+</li>
 
-  <header class="hero">
-    <button id="langToggle">PT</button>
+<p class="section__text__p1" data-en="Hello, I'm" data-pt="Olá, eu sou">
+  Olá, eu sou
+</p>
 
-    <h1 data-i18n="name">Walter Bueno</h1>
-    <p class="subtitle" data-i18n="role">
-      Data Scientist • AI Engineer • LLMs & RAG
-    </p>
-    <p class="description" data-i18n="summary">
-      MSc Computer Science student focused on Large Language Models,
-      Retrieval-Augmented Generation and Computer Vision.
-    </p>
-  </header>
+<h1 class="title">Walter Bueno Neto</h1>
 
-  <section>
-    <h2 data-i18n="about_title">About</h2>
-    <p data-i18n="about_text">
-      I work with Applied Machine Learning, from classical models to deep neural networks.
-    </p>
-  </section>
+<p
+  class="section__text__p2"
+  data-en="AI & Machine Learning Engineer"
+  data-pt="Engenheiro de IA & Machine Learning"
+>
+  Engenheiro de IA & Machine Learning
+</p>
 
-  <section>
-    <h2 data-i18n="skills_title">Skills</h2>
-    <ul class="skills">
-      <li>Python</li><li>C / C++</li><li>Go</li><li>PyTorch</li>
-      <li>Transformers</li><li>LangChain</li><li>FAISS</li>
-    </ul>
-  </section>
+<p class="location">📍 Brasil</p>
 
-  <section>
-    <h2 data-i18n="projects_title">Projects</h2>
-    <div class="projects">
-      <div class="card">
-        <h3>RAG with Llama 3</h3>
-        <p data-i18n="project_rag">
-          Retrieval-Augmented Generation using FAISS and modern LLMs.
-        </p>
-      </div>
-    </div>
-  </section>
+<p
+  class="summary"
+  data-en="Developer focused on Artificial Intelligence, LLMs, RAG systems and intelligent agents. I work on transforming research and prototypes into real-world solutions."
+  data-pt="Desenvolvedor focado em Inteligência Artificial, LLMs, sistemas RAG e agentes inteligentes. Trabalho transformando pesquisa e protótipos em soluções reais."
+>
+  Desenvolvedor focado em Inteligência Artificial, LLMs, sistemas RAG e agentes inteligentes.
+</p>
 
-  <footer>
-    <a href="https://github.com/Morphy999" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/walter-neto-22bab627b/" target="_blank">LinkedIn</a>
-  </footer>
 
-  <script src="script.js"></script>
-</body>
-</html>
+<button
+  class="btn btn-color-2"
+  onclick="window.open('./assets/Curriculo_Walter.pdf')"
+  data-en="Download CV"
+  data-pt="Baixar CV"
+>
+  Baixar CV
+</button>
+
+<button
+  class="btn btn-color-1"
+  onclick="location.href='mailto:walterbuenoneto8575@gmail.com'"
+  data-en="Contact"
+  data-pt="Contato"
+>
+  Contato
+</button>
+
+<img
+  src="./assets/linkedin.png"
+  alt="LinkedIn"
+  class="icon"
+  onclick="location.href='https://www.linkedin.com/in/walter-neto-22bab627b/'"
+/>
+
+<img
+  src="./assets/github.png"
+  alt="GitHub"
+  class="icon"
+  onclick="location.href='https://github.com/Morphy999'"
+/>
+
+<span class="email-text">
+  <a href="mailto:walterbuenoneto8575@gmail.com">
+    walterbuenoneto8575@gmail.com
+  </a>
+</span>
+
+<article class="project-card">
+  <h3 class="project-title">RAG with Llama 3</h3>
+
+  <ul class="tags">
+    <li>Python</li>
+    <li>LLM</li>
+    <li>RAG</li>
+    <li>FAISS</li>
+  </ul>
+
+  <p
+    class="project-desc"
+    data-en="Retrieval-Augmented Generation system using Llama 3 for intelligent information retrieval."
+    data-pt="Sistema de Retrieval-Augmented Generation usando Llama 3 para recuperação inteligente de informações."
+  >
+    Sistema de Retrieval-Augmented Generation usando Llama 3.
+  </p>
+
+  <div class="card-actions">
+    <a
+      class="btn-link"
+      href="https://github.com/Morphy999/LocalRag"
+      target="_blank"
+    >
+      <span>View code</span>
+    </a>
+  </div>
+</article>
+
+<article class="skill-card">
+  <h3 data-en="AI & ML" data-pt="IA & ML">IA & ML</h3>
+  <div class="skill-card__tags">
+    <span class="tag"><span class="label">LLMs</span></span>
+    <span class="tag"><span class="label">RAG</span></span>
+    <span class="tag"><span class="label">Few-Shot Learning</span></span>
+    <span class="tag"><span class="label">PyTorch</span></span>
+    <span class="tag"><span class="label">Transformers</span></span>
+    <span class="tag"><span class="label">FAISS</span></span>
+    <span class="tag"><span class="label">LangChain</span></span>
+    <span class="tag"><span class="label">LlamaIndex</span></span>
+  </div>
+</article>
