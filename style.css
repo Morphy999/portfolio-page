@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background: #0b0b0f;
+  color: #e5e5e5;
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h1, h2, h3 {
+  color: #ffffff;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.subtitle {
+  color: #a1a1aa;
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.description {
+  max-width: 600px;
+  margin: auto;
+  color: #9ca3af;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+}
+
+.skills li {
+  background: #1f2933;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #111827;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.card a {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer a {
+  color: #9ca3af;
+  text-decoration: none;
+}
