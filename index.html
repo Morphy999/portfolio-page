@@ -1,275 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Walter Bueno Neto</title>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walter Bueno - Cientista de Dados</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <!-- NAVBAR -->
-  <nav id="nav-bar">
-    <div class="logo">Walter Bueno</div>
 
-    <ul class="nav-links">
-      <li><a href="#About" data-en="About" data-pt="Sobre">About</a></li>
-      <li><a href="#projects" data-en="Projects" data-pt="Projetos">Projects</a></li>
-      <li><a href="#Skills" data-en="Skills" data-pt="Habilidades">Skills</a></li>
-      <li>
-        <a
-          href="./assets/Curriculo_Walter.pdf"
-          download
-          data-en="Resume"
-          data-pt="Currículo"
-        >
-          Resume
-        </a>
-      </li>
-    </ul>
+    <nav id="nav-bar">
+        <div class="logo">Walter Bueno</div>
+        <ul class="nav-links">
+            <li><a href="#About" data-i18n="nav-about">Sobre</a></li>
+            <li><a href="#experience" data-i18n="nav-exp">Experiência</a></li>
+            <li><a href="#projects" data-i18n="nav-projects">Projetos</a></li>
+            <li><a href="#skills" data-i18n="nav-skills">Habilidades</a></li>
+        </ul>
+        <div class="lang-controls">
+            <div class="lang-switch" id="langSwitch" data-lang="pt">
+                <span class="option en">EN</span>
+                <span class="option pt">PT</span>
+                <div class="thumb"></div>
+            </div>
+        </div>
+    </nav>
 
-    <div class="lang-controls">
-      <img
-        id="langFlag"
-        src="assets/Flag_of_the_United_States.png"
-        alt="Language flag"
-        class="lang-flag"
-      />
-
-      <button
-        id="langSwitch"
-        class="lang-switch"
-        type="button"
-        role="switch"
-        aria-checked="true"
-        data-lang="en"
-      >
-        <span class="option en">EN</span>
-        <span class="option pt">PT</span>
-        <span class="thumb"></span>
-      </button>
-    </div>
-  </nav>
-
-  <!-- ABOUT -->
-  <section id="About">
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile.jpg" alt="Walter Bueno profile photo" />
-      </div>
-
-      <div class="section__text">
-        <p class="section__text__p1" data-en="Hello, I'm" data-pt="Olá, eu sou">
-          Hello, I'm
-        </p>
-
-        <h1 class="title">Walter Bueno Neto</h1>
-
-        <p
-          class="section__text__p2"
-          data-en="AI & Machine Learning Engineer"
-          data-pt="Engenheiro de IA & Machine Learning"
-        >
-          AI & Machine Learning Engineer
-        </p>
-
-        <p class="location">📍 Brasil</p>
-
-        <p
-          class="summary"
-          data-en="Developer focused on Artificial Intelligence, LLMs, RAG systems and intelligent agents. I work on transforming research and prototypes into real-world solutions."
-          data-pt="Desenvolvedor focado em Inteligência Artificial, LLMs, sistemas RAG e agentes inteligentes, transformando pesquisa e protótipos em soluções reais."
-        >
-          Developer focused on Artificial Intelligence, LLMs, RAG systems and intelligent agents.
-        </p>
-
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/Curriculo_Walter.pdf')"
-            data-en="Download CV"
-            data-pt="Baixar CV"
-          >
-            Download CV
-          </button>
-
-          <button
-            class="btn btn-color-1"
-            onclick="location.href='mailto:walterbuenoneto8575@gmail.com'"
-            data-en="Contact"
-            data-pt="Contato"
-          >
-            Contact
-          </button>
+    <section id="About">
+        <div id="profile">
+            <div class="section__pic-container">
+                <img src="perfil.jpg" alt="Walter Bueno">
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1" data-i18n="hello">Olá, eu sou</p>
+                <h1 class="title">Walter Bueno</h1>
+                <p class="section__text__p2" data-i18n="role">Cientista de Dados</p>
+                <div class="summary" data-i18n="summary">
+                    Graduado em Ciência da Computação, atualmente cursando Mestrado com foco em LLMs, RAG e Visão Computacional. Apaixonado por IA e Ciência de Dados.
+                </div>
+                <div id="socials-container">
+                    <a href="https://github.com/Morphy999" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/walter-neto-22bab627b/" target="_blank">LinkedIn</a>
+                    <span class="email-text"><a href="mailto:walterbuenoneto8575@gmail.com">walterbuenoneto8575@gmail.com</a></span>
+                </div>
+            </div>
         </div>
 
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            class="icon"
-            alt="LinkedIn"
-            onclick="location.href='https://www.linkedin.com/in/walter-neto-22bab627b/'"
-          />
-          <img
-            src="./assets/github.png"
-            class="icon"
-            alt="GitHub"
-            onclick="location.href='https://github.com/Morphy999'"
-          />
-          <span class="email-text">
-            <a href="mailto:walterbuenoneto8575@gmail.com">
-              walterbuenoneto8575@gmail.com
-            </a>
-          </span>
+        <div class="section-divider"></div>
+
+        <div class="education">
+            <h2 class="section-title" data-i18n="edu-title">Educação</h2>
+            <div class="edu-item">
+                <h3>UFV - Mestrado</h3>
+                <p data-i18n="edu-msc">Mestrado em Ciência da Computação (Deep Learning, NLP, RAG)</p>
+            </div>
+            <div class="edu-item">
+                <h3>UFV - Bacharelado</h3>
+                <p data-i18n="edu-bsc">Bacharelado em Ciência da Computação</p>
+            </div>
         </div>
-      </div>
     </section>
 
-    <div class="section-divider"></div>
-
-   <div class="education">
-  <h2 data-en="Education" data-pt="Educação">Education</h2>
-
-  <!-- MESTRADO -->
-  <article class="edu-item">
-    <h4>Computer Science</h4>
-    <p
-      class="edu-meta"
-      data-en="Master's Degree"
-      data-pt="Mestrado"
-    >
-      Master's Degree
-    </p>
-    <p
-      data-en="Research focused on Artificial Intelligence, Machine Learning, and intelligent systems, including applied research in real-world scenarios."
-      data-pt="Pesquisa focada em Inteligência Artificial, Machine Learning e sistemas inteligentes, com aplicação em cenários reais."
-    >
-      Research focused on Artificial Intelligence, Machine Learning, and intelligent systems.
-    </p>
-  </article>
-
-  <!-- BACHARELADO -->
-  <article class="edu-item">
-    <h4>Computer Science</h4>
-    <p class="edu-meta" data-en="Bachelor Degree" data-pt="Bacharelado">
-      Bachelor Degree
-    </p>
-    <p
-      data-en="Focus on Artificial Intelligence, Machine Learning and Data Science."
-      data-pt="Ênfase em Inteligência Artificial, Machine Learning e Ciência de Dados."
-    >
-      Focus on Artificial Intelligence, Machine Learning and Data Science.
-    </p>
-  </article>
-</div>
-
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects" class="section">
-    <h2 class="section-title" data-en="Projects" data-pt="Projetos">Projects</h2>
-
-    <div class="projects-wrapper">
-      <button class="scroll-btn left">‹</button>
-      <button class="scroll-btn right">›</button>
-
-      <div class="projects-carousel">
-        <!-- Project 1 -->
-        <article class="project-card">
-          <h3 class="project-title">RAG with Llama 3</h3>
-          <ul class="tags">
-            <li>Python</li>
-            <li>LLM</li>
-            <li>RAG</li>
-            <li>FAISS</li>
-          </ul>
-          <p
-            class="project-desc"
-            data-en="Retrieval-Augmented Generation system using Llama 3 for intelligent information retrieval."
-            data-pt="Sistema de Retrieval-Augmented Generation usando Llama 3 para recuperação inteligente de informações."
-          >
-            Retrieval-Augmented Generation system using Llama 3.
-          </p>
-          <div class="card-actions">
-            <a
-              class="btn-link"
-              href="https://github.com/Morphy999/LocalRag"
-              target="_blank"
-            >
-              View code
-            </a>
-          </div>
-        </article>
-
-        <!-- Project 2 -->
-        <article class="project-card">
-          <h3 class="project-title">LLM From Scratch</h3>
-          <ul class="tags">
-            <li>Python</li>
-            <li>Transformers</li>
-            <li>Deep Learning</li>
-          </ul>
-          <p
-            class="project-desc"
-            data-en="Building a Large Language Model from scratch, including fine-tuning and instruction following."
-            data-pt="Construção de um Large Language Model do zero, incluindo fine-tuning e instruction following."
-          >
-            Building a Large Language Model from scratch.
-          </p>
-          <div class="card-actions">
-            <a
-              class="btn-link"
-              href="https://github.com/Morphy999/LLMPlayground"
-              target="_blank"
-            >
-              View code
-            </a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="Skills" class="section">
-    <h2 class="section-title" data-en="Skills" data-pt="Habilidades">Skills</h2>
-
-    <div class="skills-grid">
-      <article class="skill-card">
-        <h3 class="skill-card__title">Languages</h3>
-        <div class="skill-card__tags">
-          <span class="tag"><span class="label">Python</span><small class="level" data-key="advanced">Advanced</small></span>
-          <span class="tag"><span class="label">C++</span><small class="level" data-key="advanced">Advanced</small></span>
-          <span class="tag"><span class="label">Go</span><small class="level" data-key="intermediate">Intermediate</small></span>
+    <section id="experience" class="section">
+        <h2 class="section-title" data-i18n="exp-title">Experiência Profissional</h2>
+        <div class="timeline">
+            <div class="timeline-row">
+                <div class="time-badge">2025 - Presente</div>
+                <div class="xp-card">
+                    <div class="xp-head">
+                        <h3>Tarken Software</h3>
+                        <p class="xp-meta" data-i18n="exp-jr">Cientista de Dados Junior</p>
+                    </div>
+                    <ul class="xp-points">
+                        <li data-i18n="exp1-p1">Desenvolvimento de features temporais com Google Earth Engine.</li>
+                        <li data-i18n="exp1-p2">Otimização de modelos de Deep Learning para segmentação de satélite.</li>
+                        <li data-i18n="exp1-p3">Implementação de pipelines AWS (Lambda, Step Functions).</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-row">
+                <div class="time-badge">2024 - 2025</div>
+                <div class="xp-card">
+                    <div class="xp-head">
+                        <h3>Tarken Software</h3>
+                        <p class="xp-meta" data-i18n="exp-intern">Estágio em Ciência de Dados</p>
+                    </div>
+                    <ul class="xp-points">
+                        <li data-i18n="exp2-p1">Treinamento de modelos de segmentação semântica e séries temporais.</li>
+                        <li data-i18n="exp2-p2">Desenvolvimento de pipelines de RAG para LLMs.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </article>
+    </section>
 
-      <article class="skill-card">
-        <h3 class="skill-card__title">AI & ML</h3>
-        <div class="skill-card__tags">
-          <span class="tag"><span class="label">LLMs</span></span>
-          <span class="tag"><span class="label">RAG</span></span>
-          <span class="tag"><span class="label">Few-Shot Learning</span></span>
-          <span class="tag"><span class="label">PyTorch</span></span>
-          <span class="tag"><span class="label">Transformers</span></span>
+    <section id="projects">
+        <h2 class="section-title" data-i18n="proj-title">Projetos em Destaque</h2>
+        <div class="projects-wrapper">
+            <button class="scroll-btn left" id="prevBtn">&#10094;</button>
+            <div class="projects-carousel" id="projectCarousel">
+                <div class="project-card">
+                    <div class="project-thumb"><img src="thumb1.jpg" alt="Projeto"></div>
+                    <h3 class="project-title">Multimodal RAG Agents</h3>
+                    <ul class="tags">
+                        <li>LLM</li>
+                        <li>LangChain</li>
+                        <li>Python</li>
+                    </ul>
+                    <p class="project-desc" data-i18n="proj1-desc">Agentes inteligentes integrando texto e imagens em fluxos de automação.</p>
+                </div>
+                </div>
+            <button class="scroll-btn right" id="nextBtn">&#10095;</button>
         </div>
-      </article>
+    </section>
 
-      <article class="skill-card">
-        <h3 class="skill-card__title">Infra & Tools</h3>
-        <div class="skill-card__tags">
-          <span class="tag"><span class="label">Docker</span></span>
-          <span class="tag"><span class="label">FAISS</span></span>
-          <span class="tag"><span class="label">LangChain</span></span>
-          <span class="tag"><span class="label">LlamaIndex</span></span>
-          <span class="tag"><span class="label">Singularity</span></span>
+    <section id="skills" class="section">
+        <h2 class="section-title" data-i18n="skills-title">Habilidades Técnicas</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3 class="skill-card__title">ML & Deep Learning</h3>
+                <div class="skill-card__tags">
+                    <span class="tag">PyTorch <span class="level" data-key="advanced">ADV</span></span>
+                    <span class="tag">TensorFlow</span>
+                    <span class="tag">Scikit-learn</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3 class="skill-card__title">LLM & RAG</h3>
+                <div class="skill-card__tags">
+                    <span class="tag">LangChain</span>
+                    <span class="tag">LlamaIndex</span>
+                    <span class="tag">Vector DBs</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3 class="skill-card__title">Cloud & Languages</h3>
+                <div class="skill-card__tags">
+                    <span class="tag">AWS</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Go</span>
+                </div>
+            </div>
         </div>
-      </article>
-    </div>
-  </section>
+    </section>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
