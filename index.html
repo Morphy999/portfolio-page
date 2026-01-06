@@ -1,122 +1,275 @@
-<title>Walter Bueno Neto</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Walter Bueno Neto</title>
 
-<div class="logo">Walter Bueno</div>
-<li><a href="#About" data-en="About" data-pt="Sobre">About</a></li>
-<li><a href="#projects" data-en="Projects" data-pt="Projetos">Projects</a></li>
-<li><a href="#Skills" data-en="Skills" data-pt="Habilidades">Skills</a></li>
-<li>
-  <a
-    href="./assets/Curriculo_Walter.pdf"
-    download="Curriculo_Walter.pdf"
-    data-en="Resume"
-    data-pt="Currículo"
-  >
-    Resume
-  </a>
-</li>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-<p class="section__text__p1" data-en="Hello, I'm" data-pt="Olá, eu sou">
-  Olá, eu sou
-</p>
+<body>
+  <!-- NAVBAR -->
+  <nav id="nav-bar">
+    <div class="logo">Walter Bueno</div>
 
-<h1 class="title">Walter Bueno Neto</h1>
+    <ul class="nav-links">
+      <li><a href="#About" data-en="About" data-pt="Sobre">About</a></li>
+      <li><a href="#projects" data-en="Projects" data-pt="Projetos">Projects</a></li>
+      <li><a href="#Skills" data-en="Skills" data-pt="Habilidades">Skills</a></li>
+      <li>
+        <a
+          href="./assets/Curriculo_Walter.pdf"
+          download
+          data-en="Resume"
+          data-pt="Currículo"
+        >
+          Resume
+        </a>
+      </li>
+    </ul>
 
-<p
-  class="section__text__p2"
-  data-en="AI & Machine Learning Engineer"
-  data-pt="Engenheiro de IA & Machine Learning"
->
-  Engenheiro de IA & Machine Learning
-</p>
+    <div class="lang-controls">
+      <img
+        id="langFlag"
+        src="assets/Flag_of_the_United_States.png"
+        alt="Language flag"
+        class="lang-flag"
+      />
 
-<p class="location">📍 Brasil</p>
+      <button
+        id="langSwitch"
+        class="lang-switch"
+        type="button"
+        role="switch"
+        aria-checked="true"
+        data-lang="en"
+      >
+        <span class="option en">EN</span>
+        <span class="option pt">PT</span>
+        <span class="thumb"></span>
+      </button>
+    </div>
+  </nav>
 
-<p
-  class="summary"
-  data-en="Developer focused on Artificial Intelligence, LLMs, RAG systems and intelligent agents. I work on transforming research and prototypes into real-world solutions."
-  data-pt="Desenvolvedor focado em Inteligência Artificial, LLMs, sistemas RAG e agentes inteligentes. Trabalho transformando pesquisa e protótipos em soluções reais."
->
-  Desenvolvedor focado em Inteligência Artificial, LLMs, sistemas RAG e agentes inteligentes.
-</p>
+  <!-- ABOUT -->
+  <section id="About">
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile.jpg" alt="Walter Bueno profile photo" />
+      </div>
 
+      <div class="section__text">
+        <p class="section__text__p1" data-en="Hello, I'm" data-pt="Olá, eu sou">
+          Hello, I'm
+        </p>
 
-<button
-  class="btn btn-color-2"
-  onclick="window.open('./assets/Curriculo_Walter.pdf')"
-  data-en="Download CV"
-  data-pt="Baixar CV"
->
-  Baixar CV
-</button>
+        <h1 class="title">Walter Bueno Neto</h1>
 
-<button
-  class="btn btn-color-1"
-  onclick="location.href='mailto:walterbuenoneto8575@gmail.com'"
-  data-en="Contact"
-  data-pt="Contato"
->
-  Contato
-</button>
+        <p
+          class="section__text__p2"
+          data-en="AI & Machine Learning Engineer"
+          data-pt="Engenheiro de IA & Machine Learning"
+        >
+          AI & Machine Learning Engineer
+        </p>
 
-<img
-  src="./assets/linkedin.png"
-  alt="LinkedIn"
-  class="icon"
-  onclick="location.href='https://www.linkedin.com/in/walter-neto-22bab627b/'"
-/>
+        <p class="location">📍 Brasil</p>
 
-<img
-  src="./assets/github.png"
-  alt="GitHub"
-  class="icon"
-  onclick="location.href='https://github.com/Morphy999'"
-/>
+        <p
+          class="summary"
+          data-en="Developer focused on Artificial Intelligence, LLMs, RAG systems and intelligent agents. I work on transforming research and prototypes into real-world solutions."
+          data-pt="Desenvolvedor focado em Inteligência Artificial, LLMs, sistemas RAG e agentes inteligentes, transformando pesquisa e protótipos em soluções reais."
+        >
+          Developer focused on Artificial Intelligence, LLMs, RAG systems and intelligent agents.
+        </p>
 
-<span class="email-text">
-  <a href="mailto:walterbuenoneto8575@gmail.com">
-    walterbuenoneto8575@gmail.com
-  </a>
-</span>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Curriculo_Walter.pdf')"
+            data-en="Download CV"
+            data-pt="Baixar CV"
+          >
+            Download CV
+          </button>
 
-<article class="project-card">
-  <h3 class="project-title">RAG with Llama 3</h3>
+          <button
+            class="btn btn-color-1"
+            onclick="location.href='mailto:walterbuenoneto8575@gmail.com'"
+            data-en="Contact"
+            data-pt="Contato"
+          >
+            Contact
+          </button>
+        </div>
 
-  <ul class="tags">
-    <li>Python</li>
-    <li>LLM</li>
-    <li>RAG</li>
-    <li>FAISS</li>
-  </ul>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            class="icon"
+            alt="LinkedIn"
+            onclick="location.href='https://www.linkedin.com/in/walter-neto-22bab627b/'"
+          />
+          <img
+            src="./assets/github.png"
+            class="icon"
+            alt="GitHub"
+            onclick="location.href='https://github.com/Morphy999'"
+          />
+          <span class="email-text">
+            <a href="mailto:walterbuenoneto8575@gmail.com">
+              walterbuenoneto8575@gmail.com
+            </a>
+          </span>
+        </div>
+      </div>
+    </section>
 
-  <p
-    class="project-desc"
-    data-en="Retrieval-Augmented Generation system using Llama 3 for intelligent information retrieval."
-    data-pt="Sistema de Retrieval-Augmented Generation usando Llama 3 para recuperação inteligente de informações."
-  >
-    Sistema de Retrieval-Augmented Generation usando Llama 3.
-  </p>
+    <div class="section-divider"></div>
 
-  <div class="card-actions">
-    <a
-      class="btn-link"
-      href="https://github.com/Morphy999/LocalRag"
-      target="_blank"
+   <div class="education">
+  <h2 data-en="Education" data-pt="Educação">Education</h2>
+
+  <!-- MESTRADO -->
+  <article class="edu-item">
+    <h4>Computer Science</h4>
+    <p
+      class="edu-meta"
+      data-en="Master's Degree"
+      data-pt="Mestrado"
     >
-      <span>View code</span>
-    </a>
-  </div>
-</article>
+      Master's Degree
+    </p>
+    <p
+      data-en="Research focused on Artificial Intelligence, Machine Learning, and intelligent systems, including applied research in real-world scenarios."
+      data-pt="Pesquisa focada em Inteligência Artificial, Machine Learning e sistemas inteligentes, com aplicação em cenários reais."
+    >
+      Research focused on Artificial Intelligence, Machine Learning, and intelligent systems.
+    </p>
+  </article>
 
-<article class="skill-card">
-  <h3 data-en="AI & ML" data-pt="IA & ML">IA & ML</h3>
-  <div class="skill-card__tags">
-    <span class="tag"><span class="label">LLMs</span></span>
-    <span class="tag"><span class="label">RAG</span></span>
-    <span class="tag"><span class="label">Few-Shot Learning</span></span>
-    <span class="tag"><span class="label">PyTorch</span></span>
-    <span class="tag"><span class="label">Transformers</span></span>
-    <span class="tag"><span class="label">FAISS</span></span>
-    <span class="tag"><span class="label">LangChain</span></span>
-    <span class="tag"><span class="label">LlamaIndex</span></span>
-  </div>
-</article>
+  <!-- BACHARELADO -->
+  <article class="edu-item">
+    <h4>Computer Science</h4>
+    <p class="edu-meta" data-en="Bachelor Degree" data-pt="Bacharelado">
+      Bachelor Degree
+    </p>
+    <p
+      data-en="Focus on Artificial Intelligence, Machine Learning and Data Science."
+      data-pt="Ênfase em Inteligência Artificial, Machine Learning e Ciência de Dados."
+    >
+      Focus on Artificial Intelligence, Machine Learning and Data Science.
+    </p>
+  </article>
+</div>
+
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <h2 class="section-title" data-en="Projects" data-pt="Projetos">Projects</h2>
+
+    <div class="projects-wrapper">
+      <button class="scroll-btn left">‹</button>
+      <button class="scroll-btn right">›</button>
+
+      <div class="projects-carousel">
+        <!-- Project 1 -->
+        <article class="project-card">
+          <h3 class="project-title">RAG with Llama 3</h3>
+          <ul class="tags">
+            <li>Python</li>
+            <li>LLM</li>
+            <li>RAG</li>
+            <li>FAISS</li>
+          </ul>
+          <p
+            class="project-desc"
+            data-en="Retrieval-Augmented Generation system using Llama 3 for intelligent information retrieval."
+            data-pt="Sistema de Retrieval-Augmented Generation usando Llama 3 para recuperação inteligente de informações."
+          >
+            Retrieval-Augmented Generation system using Llama 3.
+          </p>
+          <div class="card-actions">
+            <a
+              class="btn-link"
+              href="https://github.com/Morphy999/LocalRag"
+              target="_blank"
+            >
+              View code
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <h3 class="project-title">LLM From Scratch</h3>
+          <ul class="tags">
+            <li>Python</li>
+            <li>Transformers</li>
+            <li>Deep Learning</li>
+          </ul>
+          <p
+            class="project-desc"
+            data-en="Building a Large Language Model from scratch, including fine-tuning and instruction following."
+            data-pt="Construção de um Large Language Model do zero, incluindo fine-tuning e instruction following."
+          >
+            Building a Large Language Model from scratch.
+          </p>
+          <div class="card-actions">
+            <a
+              class="btn-link"
+              href="https://github.com/Morphy999/LLMPlayground"
+              target="_blank"
+            >
+              View code
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="Skills" class="section">
+    <h2 class="section-title" data-en="Skills" data-pt="Habilidades">Skills</h2>
+
+    <div class="skills-grid">
+      <article class="skill-card">
+        <h3 class="skill-card__title">Languages</h3>
+        <div class="skill-card__tags">
+          <span class="tag"><span class="label">Python</span><small class="level" data-key="advanced">Advanced</small></span>
+          <span class="tag"><span class="label">C++</span><small class="level" data-key="advanced">Advanced</small></span>
+          <span class="tag"><span class="label">Go</span><small class="level" data-key="intermediate">Intermediate</small></span>
+        </div>
+      </article>
+
+      <article class="skill-card">
+        <h3 class="skill-card__title">AI & ML</h3>
+        <div class="skill-card__tags">
+          <span class="tag"><span class="label">LLMs</span></span>
+          <span class="tag"><span class="label">RAG</span></span>
+          <span class="tag"><span class="label">Few-Shot Learning</span></span>
+          <span class="tag"><span class="label">PyTorch</span></span>
+          <span class="tag"><span class="label">Transformers</span></span>
+        </div>
+      </article>
+
+      <article class="skill-card">
+        <h3 class="skill-card__title">Infra & Tools</h3>
+        <div class="skill-card__tags">
+          <span class="tag"><span class="label">Docker</span></span>
+          <span class="tag"><span class="label">FAISS</span></span>
+          <span class="tag"><span class="label">LangChain</span></span>
+          <span class="tag"><span class="label">LlamaIndex</span></span>
+          <span class="tag"><span class="label">Singularity</span></span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
