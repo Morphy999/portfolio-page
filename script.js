@@ -3,14 +3,14 @@
         en: {
             greeting: "Hello, I'm",
             role: "Data Scientist",
-            summary: "Computer Science graduate, currently pursuing a Master's at UFV focused on LLMs, RAG, and Computer Vision. Experience in Deep Learning and AWS.",
+            summary: "Computer Science graduate, currently pursuing a Master's at UFV focused on Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), and Computer Vision. Passionate about AI and high-impact projects.",
             download: "Download CV",
             contact: "Contact"
         },
         pt: {
             greeting: "Olá, eu sou",
             role: "Cientista de Dados",
-            summary: "Graduado em Ciência da Computação, cursando Mestrado na UFV com foco em LLMs, RAG e Visão Computacional. Experiência em Deep Learning e AWS.",
+            summary: "Graduado em Ciência da Computação, cursando Mestrado na UFV com foco em Modelos de Linguagem de Grande Escala (LLMs), Geração Aumentada por Recuperação (RAG) e Visão Computacional. Apaixonado por IA e projetos de impacto.",
             download: "Baixar CV",
             contact: "Contato"
         }
@@ -20,14 +20,14 @@
         en: {
             title: "Education",
             items: [
-                { meta: "M.Sc. · 2025–Present", desc: "Deep Learning, NLP and RAG." },
+                { meta: "M.Sc. · 2025–Present", desc: "Computer Science (Deep Learning, NLP, RAG, LLM)." },
                 { meta: "B.Sc. · 2021–2025", desc: "Computer Science." }
             ]
         },
         pt: {
             title: "Educação",
             items: [
-                { meta: "Mestrado · 2025–Presente", desc: "Aprendizado Profundo, NLP e RAG." },
+                { meta: "Mestrado · 2025–Presente", desc: "Ciência da Computação (Deep Learning, NLP, RAG, LLM)." },
                 { meta: "Bacharelado · 2021–2025", desc: "Ciência da Computação." }
             ]
         }
@@ -41,13 +41,25 @@
                     time: "2025 – Present",
                     role: "Junior Data Scientist",
                     meta: "Tarken Software · Remote",
-                    points: ["Time-series with Google Earth Engine.", "DL model optimization for Satellite images.", "AWS Pipelines (Lambda, Step Functions)."]
+                    points: [
+                        "Developing time-series features with Google Earth Engine for crop prediction models.",
+                        "Optimizing Deep Learning models for satellite imagery segmentation, improving accuracy and performance.",
+                        "Implementing automated data pipelines using AWS Step Functions and AWS Lambda.",
+                        "Extracting structured content from digitized documents using OCR (Amazon Textract, Tesseract).",
+                        "Building multimodal agents integrating text, images, and tabular data in RAG workflows."
+                    ]
                 },
                 {
                     time: "2024 – 2025",
                     role: "Data Science Intern",
                     meta: "Tarken Software · Remote",
-                    points: ["RAG pipelines for LLMs.", "Crop forecasting with XGBoost/LSTM.", "Semantic segmentation training."]
+                    points: [
+                        "Trained semantic segmentation models for land use and crop identification.",
+                        "Modeled time-series for crop forecasting using Random Forest, XGBoost, and LSTM.",
+                        "Developed RAG pipelines to integrate external knowledge bases with LLM applications.",
+                        "Applied Clean Code and Clean Architecture to build scalable and maintainable data pipelines.",
+                        "Performed data preprocessing and model evaluation using metrics like IoU and F1-score."
+                    ]
                 }
             ]
         },
@@ -58,26 +70,50 @@
                     time: "2025 – Presente",
                     role: "Cientista de Dados Junior",
                     meta: "Tarken Software · Remoto",
-                    points: ["Séries temporais com Google Earth Engine.", "Otimização de modelos DL para satélite.", "Pipelines AWS (Lambda, Step Functions)."]
+                    points: [
+                        "Desenvolvimento de features de séries temporais com Google Earth Engine para modelos de previsão de cultivo.",
+                        "Otimização de modelos de Deep Learning para segmentação de satélite, aumentando precisão e desempenho.",
+                        "Implementação de pipelines de dados automatizados com AWS Step Functions e AWS Lambda.",
+                        "Extração de conteúdo estruturado de documentos usando OCR (Amazon Textract, Tesseract OCR).",
+                        "Criação de agentes multimodais integrando texto, imagens e dados tabulares em fluxos de RAG."
+                    ]
                 },
                 {
                     time: "2024 – 2025",
                     role: "Estagiário de Ciência de Dados",
                     meta: "Tarken Software · Remoto",
-                    points: ["Pipelines de RAG para LLMs.", "Previsão de safras com XGBoost/LSTM.", "Treinamento de segmentação semântica."]
+                    points: [
+                        "Treinamento de modelos de segmentação semântica para identificação de uso do solo.",
+                        "Modelagem de séries temporais para previsão de safras com XGBoost, Random Forest e LSTM.",
+                        "Implementação de pipelines de RAG para integrar bases de conhecimento em aplicações com LLMs.",
+                        "Aplicação de Clean Code e Clean Architecture em pipelines de dados escaláveis.",
+                        "Avaliação de modelos com métricas técnicas (IoU, acurácia, F1-score)."
+                    ]
                 }
             ]
         }
     };
 
     const skillsTexts = {
-        en: { levels: { adv: "Advanced", int: "Intermediate" }, cards: [["Python", "Go", "C++", "SQL"], ["LLMs", "RAG", "Computer Vision", "Deep Learning"], ["AWS", "Docker", "PyTorch", "LangChain"]] },
-        pt: { levels: { adv: "Avançado", int: "Intermediário" }, cards: [["Python", "Go", "C++", "SQL"], ["LLMs", "RAG", "Visão Computacional", "Deep Learning"], ["AWS", "Docker", "PyTorch", "LangChain"]] }
+        en: { 
+            cards: [
+                ["Python", "Go", "C/C++", "SQL (PostgreSQL)"], // Languages [cite: 41, 40]
+                ["LLMs (RAG)", "Computer Vision", "Deep Learning", "NLP"], // AI/ML [cite: 13, 42]
+                ["AWS (Step Functions/Lambda)", "Docker", "PyTorch", "LangChain"] // Tools [cite: 24, 39, 42]
+            ] 
+        },
+        pt: { 
+            cards: [
+                ["Python", "Go", "C/C++", "SQL (PostgreSQL)"], // Linguagens [cite: 41, 40]
+                ["LLMs (RAG)", "Visão Computacional", "Deep Learning", "NLP"], // IA/ML [cite: 13, 42]
+                ["AWS (Step Functions/Lambda)", "Docker", "PyTorch", "LangChain"] // Ferramentas [cite: 24, 39, 42]
+            ] 
+        }
     };
 
     const projectsTexts = {
-        en: { title: "Projects", items: [{ title: "Multimodal RAG", tags: ["LLM", "Python"], desc: "Intelligent agents for automation.", actions: ["Code"] }, { title: "Satellite Vision", tags: ["PyTorch", "AWS"], desc: "Semantic segmentation models.", actions: ["Code"] }] },
-        pt: { title: "Projetos", items: [{ title: "RAG Multimodal", tags: ["LLM", "Python"], desc: "Agentes inteligentes para automação.", actions: ["Código"] }, { title: "Visão Satélite", tags: ["PyTorch", "AWS"], desc: "Modelos de segmentação semântica.", actions: ["Código"] }] }
+        en: { title: "Projects", items: [{ title: "Multimodal RAG Agents", tags: ["LLM", "LangChain"], desc: "Intelligent agents integrating text and images for automation.", actions: ["Code"] }, { title: "Satellite Segmentation", tags: ["PyTorch", "GEE"], desc: "Deep Learning models for agricultural monitoring.", actions: ["Code"] }] },
+        pt: { title: "Projetos", items: [{ title: "Agentes RAG Multimodais", tags: ["LLM", "LangChain"], desc: "Agentes inteligentes integrando texto e imagens para automação.", actions: ["Código"] }, { title: "Segmentação de Satélite", tags: ["PyTorch", "GEE"], desc: "Modelos de Deep Learning para monitoramento agrícola.", actions: ["Código"] }] }
     };
 
     const switchBtn = document.getElementById("langSwitch");
@@ -86,19 +122,27 @@
         document.documentElement.lang = lang === "pt" ? "pt-BR" : "en";
         
         // Nav
-        document.querySelectorAll(".nav-links a").forEach(a => a.textContent = a.dataset[lang]);
+        document.querySelectorAll(".nav-links a").forEach(a => {
+            const text = a.getAttribute(`data-${lang}`);
+            if(text) a.textContent = text;
+        });
 
         // Profile
         const p = profileTexts[lang];
-        document.querySelector(".section__text__p1").textContent = p.greeting;
-        document.querySelector(".section__text__p2").textContent = p.role;
-        document.querySelector(".summary").textContent = p.summary;
+        const greetingEl = document.querySelector(".section__text__p1");
+        const roleEl = document.querySelector(".section__text__p2");
+        const summaryEl = document.querySelector(".summary");
+        if(greetingEl) greetingEl.textContent = p.greeting;
+        if(roleEl) roleEl.textContent = p.role;
+        if(summaryEl) summaryEl.textContent = p.summary;
 
         // Experience
         const exp = experienceTexts[lang];
-        document.querySelector("#experience .section-title").textContent = exp.title;
+        const expTitle = document.querySelector("#experience .section-title");
+        if(expTitle) expTitle.textContent = exp.title;
         document.querySelectorAll(".timeline-row").forEach((row, i) => {
             const item = exp.items[i];
+            if(!item) return;
             row.querySelector(".time-badge").textContent = item.time;
             row.querySelector(".xp-role").textContent = item.role;
             row.querySelector(".xp-meta").textContent = item.meta;
@@ -107,10 +151,22 @@
             item.points.forEach(pt => { const li = document.createElement("li"); li.textContent = pt; ul.appendChild(li); });
         });
 
+        // Education
+        const edu = educationTexts[lang];
+        document.querySelectorAll(".edu-item").forEach((item, i) => {
+            const data = edu.items[i];
+            if(!data) return;
+            const meta = item.querySelector(".edu-meta");
+            const desc = item.querySelector(".edu-desc");
+            if(meta) meta.textContent = data.meta;
+            if(desc) desc.textContent = data.desc;
+        });
+
         // Skills
         const sk = skillsTexts[lang];
         document.querySelectorAll(".skill-card").forEach((card, i) => {
             const container = card.querySelector(".skill-card__tags");
+            if(!container || !sk.cards[i]) return;
             container.innerHTML = "";
             sk.cards[i].forEach(s => {
                 const span = document.createElement("span");
@@ -122,10 +178,20 @@
 
         // Projects
         const pr = projectsTexts[lang];
-        document.querySelector("#projects .section-title").textContent = pr.title;
+        const prTitle = document.querySelector("#projects .section-title");
+        if(prTitle) prTitle.textContent = pr.title;
         document.querySelectorAll(".project-card").forEach((card, i) => {
-            card.querySelector(".project-title").textContent = pr.items[i].title;
-            card.querySelector(".project-desc").textContent = pr.items[i].desc;
+            const item = pr.items[i];
+            if(!item) return;
+            card.querySelector(".project-title").textContent = item.title;
+            card.querySelector(".project-desc").textContent = item.desc;
+            const tagContainer = card.querySelector(".tags");
+            tagContainer.innerHTML = "";
+            item.tags.forEach(t => {
+                const li = document.createElement("li");
+                li.textContent = t;
+                tagContainer.appendChild(li);
+            });
         });
     }
 
@@ -135,6 +201,7 @@
         applyLang(next);
     });
 
+    // Inicia em PT
     applyLang("pt");
 })();
 
@@ -143,7 +210,7 @@
     const carousel = document.querySelector(".projects-carousel");
     const btnL = document.querySelector(".scroll-btn.left");
     const btnR = document.querySelector(".scroll-btn.right");
-    if(!carousel) return;
-    btnL.onclick = () => carousel.scrollBy({ left: -300, behavior: 'smooth' });
-    btnR.onclick = () => carousel.scrollBy({ left: 300, behavior: 'smooth' });
+    if(!carousel || !btnL || !btnR) return;
+    btnL.onclick = () => carousel.scrollBy({ left: -350, behavior: 'smooth' });
+    btnR.onclick = () => carousel.scrollBy({ left: 350, behavior: 'smooth' });
 })();
