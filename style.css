@@ -22,12 +22,13 @@
   border-color: var(--accent-blue);
 }
 
-.skill-card h3 {
+.skill-card__title {
   margin-bottom: 20px;
   color: var(--primary-dark);
   font-size: 1.2rem;
   border-bottom: 2px solid var(--bg-light);
   padding-bottom: 10px;
+  font-weight: 600; /* Adicionado para destaque */
 }
 
 .skill-card__tags {
